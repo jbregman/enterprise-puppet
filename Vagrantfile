@@ -18,6 +18,6 @@ Vagrant.configure(2) do |config|
     aws.security_groups = ENV['AWS_SECURITY_GROUP']
     override.ssh.private_key_path = ENV['SSH_PRIVATE_KEY_PATH']
     override.ssh.username = 'ubuntu'
-#    aws.user_data = File.read("user_data.sh")
+    aws.user_data = File.read("user_data.sh")
    end
 end
